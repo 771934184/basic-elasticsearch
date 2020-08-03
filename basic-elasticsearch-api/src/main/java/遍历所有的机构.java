@@ -17,7 +17,7 @@
 		</collection>
 	</resultMap>
 
-	<select id="findTpsysOrgByParOrg" resultMap="relationMap">
+	<select id="findTpsysOrgByParOrg" resultMap="relationMap" >
 		select pk_org pkOrg,s_name name
 		from tp_sys_org tso
 		where tso.par_org = #{pkOrg}
